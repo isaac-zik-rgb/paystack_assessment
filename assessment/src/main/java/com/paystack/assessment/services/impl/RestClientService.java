@@ -3,6 +3,7 @@ package com.paystack.assessment.services.impl;
 import com.paystack.assessment.dtos.request.PaymentRequestDto;
 import com.paystack.assessment.dtos.response.PayStackResponse;
 import com.paystack.assessment.dtos.response.ResponseDto;
+import com.paystack.assessment.dtos.response.VerificationResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,6 +36,19 @@ public class RestClientService {
 
         log.info("done making request");
         log.info("logging body: {}", response.getBody().getData());
+        return response.getBody();
+    }
+
+    public ResponseDto<VerificationResponseDto> verifyTransaction(String txRef) {
+        ResponseEntity<ResponseDto<VerificationResponseDto>> response =
+                payStackRestClient.get()
+                        .uri("transaction/verify/" + txRef)
+                        .header("Authorization", "Bearer " + payStackToken)
+                        .retrieve()
+                        .toEntity(new ParameterizedTypeReference<>() {
+                        });
+        log.info("done making request");
+        log.info("logging body: {}", response.getBody());
         return response.getBody();
     }
 }

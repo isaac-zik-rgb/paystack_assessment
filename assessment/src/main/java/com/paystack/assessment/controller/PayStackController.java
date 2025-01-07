@@ -22,4 +22,8 @@ public class PayStackController {
     }
 
 
+    @PostMapping("verify-transaction")
+    public  ResponseEntity<?> verifyTransaction(@RequestParam String tx_ref){
+        return  ResponseEntity.status(200).body(payStackService.verifyTransaction(tx_ref));
+    }
 }
