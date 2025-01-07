@@ -6,4 +6,4 @@ WORKDIR /assessment
 # Copy the JAR file from the target directory into the container
 COPY  assessment/libs/assessment-0.0.1-SNAPSHOT.jar assessment.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","paystack.jar"]
+ENTRYPOINT ["java","-jar","assessmet.jar"]
