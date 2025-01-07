@@ -84,7 +84,7 @@
         }
 
         // Extract `txref` from URL
-        const txref = getQueryParam('txref');
+        const txref = getQueryParam('trxref');
         console.log("printing txref: " + txref);
 
         // Select DOM elements
@@ -97,12 +97,11 @@
             statusMessage.innerHTML = "<span class='failure'>Transaction reference is missing!</span>";
         } else {
             // Send `txref` to the server
-            fetch('https://paystack-assessment.onrender.com/api/paystack/verify-transaction', {
+            fetch('https://paystack-assessment.onrender.com/api/paystack/verify-transaction?' + txref, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ txref })
+                }
             })
             .then(response => response.json())
             .then(result => {
