@@ -12,7 +12,7 @@ COPY settings.gradle .
 COPY src ./src
 
 # Build the application
-RUN ./gradlew clean bootJar --no-daemon
+RUN ./gradlew clean build
 
 # Stage 2: Create the runtime image
 FROM openjdk:17-jdk-slim
