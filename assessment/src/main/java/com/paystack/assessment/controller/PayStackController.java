@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("api/paystack/")
 @RequiredArgsConstructor
 public class PayStackController {
@@ -19,4 +20,6 @@ public class PayStackController {
   public ResponseEntity<?>  initializePayment(@RequestBody PaymentRequestDto paymentRequestDto){
         return ResponseEntity.status(200).body(payStackService.initializePayment(paymentRequestDto));
     }
+
+
 }
