@@ -19,10 +19,10 @@ FROM openjdk:17-jdk-slim
 LABEL authors="Chima"
 
 # Set the working directory in the container
-WORKDIR /paystack
+WORKDIR /assessment
 
 # Copy the JAR file from the build stage
-COPY --from=build /assessment/build/libs/assessment-0.0.1-SNAPSHOT.jar paystack.jar
+COPY --from=build /assessment/build/libs/assessment-0.0.1-SNAPSHOT.jar assessment.jar
 
 # Expose the port used by the application
 EXPOSE 8080
