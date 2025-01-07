@@ -1,5 +1,5 @@
 # Stage 1: Build the JAR
-FROM gradle:8.4.1-jdk17 AS build
+FROM gradle:8.3.0-jdk17 AS build
 WORKDIR /app
 
 # Copy Gradle wrapper and build files
