@@ -11,8 +11,7 @@ COPY settings.gradle .
 # Copy the source code
 COPY src ./src
 
-# Build the application
-RUN ./gradlew clean build
+
 
 # Stage 2: Create the runtime image
 FROM openjdk:17-jdk-slim
