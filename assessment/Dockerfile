@@ -7,4 +7,4 @@ WORKDIR /assessment
 
 COPY build/libs/assessment-0.0.1-SNAPSHOT.jar assessment.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","assessmet.jar"]
+ENTRYPOINT ["java","-jar","assessment.jar"]
