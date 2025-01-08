@@ -111,7 +111,7 @@
                 console.log(result);
                 const data = result.data;
                 if (data.status === 'success') {
-                    statusMessage.innerHTML = `<span class='success'>Your transaction of ${result.amount} was successful!</span>`;
+                    statusMessage.innerHTML = `<span class='success'>Your transaction was successful!</span>`;
                 } else {
                     statusMessage.innerHTML = `<span class='failure'>Your transaction failed. Reason: ${result.message || 'Unknown error'}</span>`;
                 }
