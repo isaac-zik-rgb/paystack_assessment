@@ -29,7 +29,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
      })
      .catch(error => {
        console.error('Error:', error);
-       alert('An error occurred while processing your payment.');
+       alert('An error occurred while processing your payment try again!.: ');
      });
    
 });
