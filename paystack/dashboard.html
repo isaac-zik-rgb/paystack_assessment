@@ -98,7 +98,7 @@
             statusMessage.innerHTML = "<span class='failure'>Transaction reference is missing!</span>";
         } else {
             // Send `txref` to the server
-            fetch('https://paystack-assessment.onrender.com/api/paystack/verify-transaction?' + txref, {
+            fetch('https://paystack-assessment.onrender.com/api/paystack/verify-transaction?tx_ref=' + txref, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
