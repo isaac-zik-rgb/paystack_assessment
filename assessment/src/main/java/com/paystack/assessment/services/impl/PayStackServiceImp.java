@@ -20,7 +20,7 @@ public class PayStackServiceImp implements PayStackService {
     @Override
     public ResponseDto<PayStackResponse> initializePayment(PaymentRequestDto paymentRequestDto) {
         paymentRequestDto.setReference(UUID.randomUUID().toString().substring(12));
-        paymentRequestDto.setCallback_url("https://paystack-assessment.vercel.app/dashboard.html");
+        paymentRequestDto.setCallback_url("https://paystack-assessment-1.onrender.com/dashboard.html");
         return restClientService.initializePayment(paymentRequestDto);
     }
 
