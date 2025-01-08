@@ -14,9 +14,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class VerificationResponseDto {
-    private Long id;
+   
     private String domain;
     private String status;
     private String reference;
-    private String receipt_number;
+   
 }
