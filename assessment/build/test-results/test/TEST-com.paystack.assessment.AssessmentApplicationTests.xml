@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.paystack.assessment.AssessmentApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-07T23:32:40" hostname="DESKTOP-Q67KS6N" time="2.629">
+<testsuite name="com.paystack.assessment.AssessmentApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-08T00:32:13" hostname="DESKTOP-Q67KS6N" time="2.895">
   <properties/>
-  <testcase name="contextLoads()" classname="com.paystack.assessment.AssessmentApplicationTests" time="2.629"/>
-  <system-out><![CDATA[00:32:15.076 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.paystack.assessment.AssessmentApplicationTests]: AssessmentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:32:15.791 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.paystack.assessment.AssessmentApplication for test class com.paystack.assessment.AssessmentApplicationTests
+  <testcase name="contextLoads()" classname="com.paystack.assessment.AssessmentApplicationTests" time="2.895"/>
+  <system-out><![CDATA[01:31:52.517 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.paystack.assessment.AssessmentApplicationTests]: AssessmentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:31:52.954 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.paystack.assessment.AssessmentApplication for test class com.paystack.assessment.AssessmentApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +14,18 @@
 
  :: Spring Boot ::                (v3.4.1)
 
-2025-01-08T00:32:18.112+01:00  INFO 20012 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : Starting AssessmentApplicationTests using Java 17.0.12 with PID 20012 (started by Chima in C:\Users\Chima\OneDrive\Documents\paystack\paystack_assessment\assessment)
-2025-01-08T00:32:18.116+01:00  INFO 20012 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2025-01-08T00:32:20.910+01:00  INFO 20012 --- [assessment] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-08T00:32:21.021+01:00  INFO 20012 --- [assessment] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 0 JPA repository interfaces.
-2025-01-08T00:32:22.790+01:00  INFO 20012 --- [assessment] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-08T00:32:23.111+01:00  INFO 20012 --- [assessment] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2025-01-08T00:32:23.285+01:00  INFO 20012 --- [assessment] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-08T00:32:24.598+01:00  INFO 20012 --- [assessment] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-08T00:32:24.748+01:00  INFO 20012 --- [assessment] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-08T00:32:34.154+01:00  INFO 20012 --- [assessment] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ea84e01
-2025-01-08T00:32:34.160+01:00  INFO 20012 --- [assessment] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-08T00:32:35.921+01:00  INFO 20012 --- [assessment] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-08T01:31:54.954+01:00  INFO 20540 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : Starting AssessmentApplicationTests using Java 17.0.12 with PID 20540 (started by Chima in C:\Users\Chima\OneDrive\Documents\paystack\paystack_assessment\assessment)
+2025-01-08T01:31:54.958+01:00  INFO 20540 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T01:31:58.598+01:00  INFO 20540 --- [assessment] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T01:31:58.700+01:00  INFO 20540 --- [assessment] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 0 JPA repository interfaces.
+2025-01-08T01:32:00.680+01:00  INFO 20540 --- [assessment] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T01:32:01.104+01:00  INFO 20540 --- [assessment] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T01:32:01.277+01:00  INFO 20540 --- [assessment] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T01:32:02.664+01:00  INFO 20540 --- [assessment] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T01:32:02.836+01:00  INFO 20540 --- [assessment] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T01:32:07.113+01:00  INFO 20540 --- [assessment] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ea84e01
+2025-01-08T01:32:07.118+01:00  INFO 20540 --- [assessment] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T01:32:08.813+01:00  INFO 20540 --- [assessment] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.4
@@ -33,10 +33,10 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-08T00:32:37.459+01:00  INFO 20012 --- [assessment] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-08T00:32:37.477+01:00  INFO 20012 --- [assessment] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-08T00:32:38.463+01:00  WARN 20012 --- [assessment] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-08T00:32:40.141+01:00  INFO 20012 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : Started AssessmentApplicationTests in 23.042 seconds (process running for 35.989)
+2025-01-08T01:32:11.065+01:00  INFO 20540 --- [assessment] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T01:32:11.100+01:00  INFO 20540 --- [assessment] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T01:32:12.088+01:00  WARN 20540 --- [assessment] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T01:32:13.602+01:00  INFO 20540 --- [assessment] [    Test worker] c.p.a.AssessmentApplicationTests         : Started AssessmentApplicationTests in 19.903 seconds (process running for 26.833)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
