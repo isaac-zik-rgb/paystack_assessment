@@ -106,7 +106,9 @@
             })
             .then(response => response.json())
             .then(result => {
-                loader.style.display = 'none'; // Hide loader
+                loader.style.display = 'none';
+                // Hide loader
+                console.log(result);
                 if (result.status === 'success') {
                     statusMessage.innerHTML = `<span class='success'>Your transaction of ${result.amount} was successful!</span>`;
                 } else {
